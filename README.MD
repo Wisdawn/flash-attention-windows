@@ -1,4 +1,3 @@
-```markdown
 # Flash Attention Windows Wheels (Python 3.10)
 
 Pre-built Windows wheels for [Flash-Attention 2](https://github.com/Dao-AILab/flash-attention) - The state-of-the-art efficient attention implementation for NVIDIA GPUs.
@@ -44,7 +43,7 @@ Note: These wheels are community-maintained and are not officially supported by 
 
 ## Quick Installation
 
-```bash
+```sh
 # Simply download the wheel file and install with:
 pip install flash_attn-2.7.0.post2-cp310-cp310-win_amd64.whl
 ```
@@ -92,7 +91,7 @@ except RuntimeError as e:
 ### Build Steps
 
 1. **Prepare Environment**
-```powershell
+```sh
 # Install build dependencies
 pip install ninja packaging
 
@@ -102,7 +101,7 @@ $env:CUDA_HOME="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4"
 ```
 
 2. **Build Process**
-```powershell
+```sh
 # Remove existing installation
 pip uninstall flash-attn -y
 
@@ -156,10 +155,9 @@ Distributed under the same license as Flash Attention. See [Flash Attention Lice
 ## Security
 
 Verify downloaded wheel checksums:
-```
+```sh
 # Generate checksum (Powershell)
 Get-FileHash flash_attn-2.7.0.post2-cp310-cp310-win_amd64.whl -Algorithm SHA256
-
+```
 # Compare with expected value
 15e0c4af6349b66c1003bf8541487636aca0a6ad81d6593d6711409983fd616c  flash_attn-2.7.0.post2-cp310-cp310-win_amd64.whl
-```
