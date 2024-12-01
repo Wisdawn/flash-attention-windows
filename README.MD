@@ -4,7 +4,10 @@ Pre-built Windows wheels for [Flash-Attention 2](https://github.com/Dao-AILab/fl
 
 ## Overview 
 
-This repository provides Windows compatibility for Flash Attention 2 through ready-to-use pre-built wheels, making this cutting-edge attention implementation immediately accessible in Windows environments without complex and time-consuming build requirements.
+This repository was created in response to the numerous challenges Windows users face when trying to build Flash-Attention 2. 
+After experiencing these difficulties firsthand and seeing many similar issues in the official repository (#1340, #1339, #1292), it became clear that a solution was needed to make this cutting-edge attention implementation immediately accessible in Windows environments.
+
+Building Flash-Attention on Windows requires a delicate setup process with specific versions of multiple dependencies, careful environment configuration, and significant time investment. This repository eliminates these hurdles by providing ready-to-use pre-built wheels, making this cutting-edge attention implementation immediately accessible in Windows environments without complex and time-consuming build requirements.
 
 Flash Attention 2, originally created by Tri Dao and Dan Fu, delivers breakthrough performance:
 - 20% faster than Flash Attention 1 
@@ -17,11 +20,12 @@ These wheels are tested and maintained to ensure stable deployment on Windows, s
 
 ## Why These Wheels?
 
-1. **Eliminates Build Complexity**: Bypass the complex build environment setup required for Windows
-2. **Saves Development Time**: Immediate integration into your PyTorch projects
-3. **Verified Functionality**: Tested against standard benchmarks to ensure performance
-4. **Regular Updates**: Maintained to keep pace with Flash Attention releases
-5. **Community Support**: Issues and improvements handled via GitHub collaboration
+1. *Solves Common Build Issues**: Addresses widespread Windows build failures documented in multiple GitHub issues
+2. **Eliminates Build Complexity**: Bypasses the need for precise configuration of Visual Studio, CUDA toolkit, and build environment
+3. **Saves Hours of Development Time**: Replaces a fragile, time-consuming build process with simple pip installation for Immediate integration into your PyTorch projects
+4. **Verified Functionality**: Tested against standard benchmarks to ensure performance
+5. **Regular Updates**: Maintained to keep pace with Flash Attention releases
+6. **Community Support**: Issues and improvements handled via GitHub collaboration
 
 Note: These wheels are community-maintained and are not officially supported by the Flash-Attention team. They are provided to support the ML community's Windows developers.
 
@@ -29,7 +33,7 @@ Note: These wheels are community-maintained and are not officially supported by 
 
 - Flash Attention Version: 2.7.0.post2
 - Python Version: 3.10
-- Platform: Windows 11 (x64) + NVIDIA GPU (Ada Lovelace architecture)
+- Platform: Windows 10/11 (64-bit)
 - Build Date: November 2024
 
 ## Requirements
